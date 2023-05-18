@@ -17,9 +17,9 @@ def main():
     else:
         st.error(diagnosis0)
 
-    # HighBP
+    # no HighBP
     diagnosis1 = hypertension_prediction(
-        [12.0,1.0,1.0,1.0,26.0,1.0,0.0,0.0,1.0,0.0,0.0,3.0,0.0,0.0,0.0,1.0,0.0]
+        [13.0,1.0,0.0,1.0,26.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0,10.0,0.0,0.0,0.0]
     )
     if diagnosis1 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis1)
@@ -28,7 +28,7 @@ def main():
 
     # no HighBP
     diagnosis2 = hypertension_prediction(
-        [13.0,1.0,0.0,1.0,26.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0,10.0,0.0,0.0,0.0]
+        [12.0,0.0,1.0,1.0,37.0,0.0,0.0,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0]
     )
     if diagnosis2 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis2)
@@ -37,7 +37,7 @@ def main():
 
     # HighBP
     diagnosis3 = hypertension_prediction(
-        [11.0,1.0,1.0,1.0,28.0,1.0,0.0,1.0,1.0,1.0,0.0,3.0,0.0,3.0,0.0,0.0,0.0]
+        [2.0,0.0,0.0,1.0,26.0,0.0,0.0,1.0,0.0,1.0,1.0,1.0,4.0,0.0,0.0,0.0,0.0]
     )
     if diagnosis3 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis3)
@@ -46,25 +46,25 @@ def main():
 
     # no HighBP
     diagnosis4 = hypertension_prediction(
-        [8.0,0.0,0.0,1.0,29.0,1.0,0.0,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0]
+        [8.0,1.0,1.0,1.0,39.0,1.0,0.0,1.0,1.0,1.0,0.0,3.0,0.0,10.0,1.0,0.0,0.0]
     )
     if diagnosis4 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis4)
     else:
         st.error(diagnosis4)
 
-    # no HighBP
+    # HighBP
     diagnosis5 = hypertension_prediction(
-        [1.0,0.0,0.0,1.0,18.0,0.0,0.0,1.0,1.0,1.0,0.0,2.0,7.0,0.0,0.0,0.0,0.0]
+        [13.0,1.0,1.0,1.0,42.0,0.0,0.0,0.0,0.0,1.0,0.0,4.0,0.0,0.0,1.0,0.0,0.0]
     )
     if diagnosis5 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis5)
     else:
         st.error(diagnosis5)
 
-    # no HighBP
+    # HighBP
     diagnosis6 = hypertension_prediction(
-        [13.0,1.0,1.0,1.0,26.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0]
+        [4.0,0.0,0.0,1.0,26.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0]
     )
     if diagnosis6 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis6)
@@ -73,7 +73,7 @@ def main():
 
     # no HighBP
     diagnosis7 = hypertension_prediction(
-        [6.0,1.0,0.0,1.0,31.0,1.0,0.0,0.0,1.0,1.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0]
+        [2.0,1.0,0.0,1.0,21.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0]
     )
     if diagnosis7 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis7)
@@ -82,16 +82,16 @@ def main():
 
     # no HighBP
     diagnosis8 = hypertension_prediction(
-        [3.0,0.0,0.0,1.0,32.0,0.0,0.0,1.0,1.0,1.0,0.0,3.0,0.0,0.0,0.0,0.0,0.0]
+        [6.0,0.0,1.0,1.0,37.0,0.0,0.0,0.0,0.0,1.0,0.0,4.0,0.0,0.0,0.0,0.0,1.0]
     )
     if diagnosis8 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis8)
     else:
         st.error(diagnosis8)
 
-    # no HighBP
+    # HighBP
     diagnosis9 = hypertension_prediction(
-        [6.0,1.0,0.0,1.0,27.0,1.0,0.0,0.0,1.0,1.0,0.0,3.0,0.0,6.0,0.0,0.0,0.0]
+        [9.0,0.0,1.0,1.0,25.0,0.0,1.0,1.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0]
     )
     if diagnosis9 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis9)
