@@ -8,54 +8,54 @@ df = pd.read_csv("http://franciscusvalentinus.web.app/dataset/diabetes_data.csv"
 loaded_model = pickle.load(open('/Users/franciscusvalentinus/PycharmProjects/pythonProject/venv/trained_model.sav', 'rb'))
 
 def main():
-    # HighBP
+    # no HighBP
     diagnosis0 = hypertension_prediction(
-        [13.0,1.0,1.0,1.0,26.0,0.0,0.0,1.0,1.0,1.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0]
+        [10.0,0.0,0.0,1.0,22.0,1.0,0.0,1.0,1.0,1.0,0.0,4.0,15.0,15.0,0.0,1.0,1.0]
     )
     if diagnosis0 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis0)
     else:
         st.error(diagnosis0)
 
-    # no HighBP
+    # HighBP
     diagnosis1 = hypertension_prediction(
-        [12.0,0.0,1.0,1.0,37.0,1.0,0.0,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0]
+        [8.0,0.0,0.0,1.0,30.0,1.0,1.0,1.0,1.0,1.0,0.0,5.0,7.0,30.0,1.0,0.0,1.0]
     )
     if diagnosis1 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis1)
     else:
         st.error(diagnosis1)
 
-    # no HighBP
+    # HighBP
     diagnosis2 = hypertension_prediction(
-        [6.0,1.0,0.0,1.0,38.0,0.0,0.0,1.0,1.0,1.0,0.0,4.0,5.0,0.0,0.0,0.0,0.0]
+        [9.0,1.0,0.0,1.0,26.0,0.0,1.0,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0]
     )
     if diagnosis2 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis2)
     else:
         st.error(diagnosis2)
 
-    # HighBP
+    # no HighBP
     diagnosis3 = hypertension_prediction(
-        [5.0,0.0,0.0,1.0,29.0,0.0,0.0,1.0,1.0,1.0,0.0,2.0,15.0,0.0,0.0,0.0,0.0]
+        [12.0,1.0,1.0,1.0,25.0,0.0,1.0,1.0,1.0,1.0,0.0,4.0,0.0,0.0,0.0,0.0,1.0]
     )
     if diagnosis3 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis3)
     else:
         st.error(diagnosis3)
 
-    # HighBP
+    # no HighBP
     diagnosis4 = hypertension_prediction(
-        [9.0,1.0,0.0,1.0,24.0,1.0,0.0,1.0,1.0,1.0,0.0,4.0,0.0,10.0,1.0,0.0,0.0]
+        [1.0,1.0,0.0,1.0,22.0,0.0,0.0,1.0,0.0,1.0,0.0,3.0,0.0,2.0,0.0,0.0,1.0]
     )
     if diagnosis4 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis4)
     else:
         st.error(diagnosis4)
 
-    # no HighBP
+    # HighBP
     diagnosis5 = hypertension_prediction(
-        [6.0,0.0,0.0,1.0,18.0,0.0,0.0,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0]
+        [9.0,1.0,0.0,1.0,32.0,1.0,1.0,1.0,0.0,1.0,0.0,3.0,0.0,0.0,1.0,0.0,1.0]
     )
     if diagnosis5 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis5)
@@ -64,34 +64,34 @@ def main():
 
     # HighBP
     diagnosis6 = hypertension_prediction(
-        [8.0,1.0,1.0,1.0,26.0,1.0,0.0,0.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0]
+        [9.0,1.0,1.0,1.0,49.0,1.0,0.0,0.0,0.0,1.0,0.0,5.0,30.0,20.0,1.0,0.0,1.0]
     )
     if diagnosis6 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis6)
     else:
         st.error(diagnosis6)
 
-    # HighBP
+    # no HighBP
     diagnosis7 = hypertension_prediction(
-        [6.0,0.0,1.0,1.0,41.0,0.0,0.0,0.0,1.0,1.0,0.0,4.0,14.0,2.0,0.0,0.0,0.0]
+        [9.0,1.0,1.0,1.0,32.0,1.0,0.0,0.0,0.0,1.0,0.0,5.0,30.0,30.0,0.0,0.0,1.0]
     )
     if diagnosis7 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis7)
     else:
         st.error(diagnosis7)
 
-    # no HighBP
+    # HighBP
     diagnosis8 = hypertension_prediction(
-        [10.0,1.0,1.0,1.0,30.0,0.0,0.0,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0]
+        [10.0,1.0,1.0,1.0,26.0,0.0,0.0,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0]
     )
     if diagnosis8 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis8)
     else:
         st.error(diagnosis8)
 
-    # no HighBP
+    # HighBP
     diagnosis9 = hypertension_prediction(
-        [6.0,0.0,0.0,0.0,29.0,1.0,0.0,0.0,1.0,0.0,0.0,4.0,30.0,15.0,0.0,0.0,0.0]
+        [8.0,1.0,1.0,1.0,39.0,1.0,1.0,1.0,1.0,1.0,0.0,5.0,30.0,30.0,1.0,0.0,1.0]
     )
     if diagnosis9 == "Orang ini tidak mengidap penyakit hipertensi":
         st.success(diagnosis9)
