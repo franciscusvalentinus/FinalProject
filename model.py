@@ -42,9 +42,6 @@ best_params = fmin(objective,
                    max_evals=100,
                    trials=trials)
 
-# aaa
-print(best_params)
-
 # train XGBoost model with best hyperparameters
 model = xgb.XGBClassifier(
     n_estimators=int(best_params['n_estimators']),
@@ -80,5 +77,6 @@ sorted_idx = importances.argsort()[::-1]
 for idx in sorted_idx:
     print("{:0.3f} {}".format(importances[idx], X.columns[idx]))
 
+# save model
 filename = 'trained_model.sav'
 pickle.dump(model, open(filename, 'wb'))
