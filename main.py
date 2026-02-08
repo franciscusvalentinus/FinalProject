@@ -5,7 +5,7 @@ import pandas as pd
 
 # loading the saved model
 df = pd.read_csv("http://franciscusvalentinus.web.app/dataset/diabetes_data.csv")
-loaded_model = pickle.load(open('http://franciscusvalentinus.web.app/dataset/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('/Users/franciscusvalentinus/PycharmProjects/pythonProject/venv/trained_model.sav', 'rb'))
 
 def main():
     # giving a title
