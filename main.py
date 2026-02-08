@@ -4,8 +4,9 @@ import streamlit as st
 import pandas as pd
 
 # loading the saved model
-df = pd.read_csv("http://franciscusvalentinus.web.app/dataset/diabetes_data.csv")
-loaded_model = pickle.load(open('/Users/franciscusvalentinus/PycharmProjects/pythonProject/venv/trained_model.sav', 'rb'))
+df = pd.read_csv("diabetes_data.csv")
+with open('trained_model.sav', 'rb') as f:
+    loaded_model = pickle.load(f)
 
 def main():
     # giving a title
